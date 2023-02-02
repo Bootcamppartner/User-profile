@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" href="assets/favicon_io/favicon.ico">
+    <title>User Profile Anabela Santos</title>
+  </head>
+  <body>
+  <header>
+    
+     <nav class="navbar"">
+         <menu>
+             <li><a href="index.html">&#x1F3E0 Home</a></li>
+             <li><a href="bio.html">&#128301 Bio</a></li>
+             <li><a href="portfolio.html">&#128190 Portfolio</a></li>
+         </menu>
+     </nav>
+ </header>
+ <main>
+ <section class="information">
+    <heading><h1>Experience</h1></heading>
+
+    <section class="image-container-in-experience">
+      <img id="cup-of-coffee" alt="gigantic cup of coffee with two people working in a laptop. One in the brim, the other seated on the floor leaning against the cup" src="assets/full stack.jpg"/>
+    </section>
+    <p>Curabitur eget tellus odio. Maecenas ex justo, tincidunt vel porttitor id, vulputate quis risus. Nulla vel ex nisl. Quisque augue ligula, vestibulum vitae enim sed, facilisis pretium dui. Morbi ligula diam, mattis non lectus eget, vehicula condimentum sem.
+      </p>
+      <p>Cras semper, nisi id pretium commodo, velit dui tristique quam, quis efficitur quam lacus et lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+        <p>Vivamus id odio nec purus egestas suscipit. Donec dolor dui, cursus ornare facilisis quis, placerat vel erat. Sed purus mauris, faucibus quis elementum sit amet, lobortis nec risus. Aliquam molestie justo et ante vehicula iaculis sit amet in purus. Nulla vel sollicitudin nisl. In malesuada lorem mauris, eget sodales risus luctus eget.
+        </p>
+
+      <p>Vestibulum fermentum risus non felis vehicula efficitur. Suspendisse tristique aliquet tellus ut ultricies. In vel molestie ante. Pellentesque non sapien vitae sem facilisis mattis. Maecenas ex metus, gravida sit amet massa et, mollis mollis nunc. Nunc pretium imperdiet imperdiet. Etiam finibus diam nec enim faucibus, sit amet malesuada turpis efficitur.
+        </p>
+        <p>Phasellus accumsan laoreet imperdiet. Praesent eget lacinia lectus. Phasellus in tristique leo, et venenatis nibh. Sed nunc mauris, ornare a tempus sit amet, suscipit vitae mi. Nullam ac nisl euismod, accumsan neque in, ultrices metus. Phasellus pretium molestie ligula a finibus. Phasellus non lacinia ligula, sit amet condimentum neque.
+        </p>
+  </section>
+</main>
+<footer>
+  <h3>Contact Me</h3>
+  <p>If you need further information, please contact me.</p>
+  <form action="Thank you for your message. I'll reply ASAP.php" method="post" id="user-form"> 
+      <!-- it will give an 405 (not allowed) error because there's no API set for this page. -->
+      Name: <input type="text" name="name">
+      Email: <input type="email" name="email">
+      Message: <br>
+      <textarea textarea rows="5" cols="50" name="message" form action="user-form">
+Please enter your message here...</textarea>
+<input type="submit" value="Submit" alt="click submit">
+  </form>
+</footer>
+</body>
+</html>

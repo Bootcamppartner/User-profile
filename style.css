@@ -1,0 +1,223 @@
+/* To style the website I looked into WCAG guidelines and tried to create an accessible website. 
+The font-type, font-size, character and line spacing, maximum number of words in a paragraph, left side justify, 
+padding, no underlined words, pastel colour background, no use of reds, pinks or greens shades of colour, bold for links, ... were styled in accordance with the guidelines
+and the recommendations found in Harvard University's digital accessibility webpage https://accessibility.huit.harvard.edu/
+I didn’t used any type of shadowing, background images or other visual “polluting” elements to keep it as “clean” and easy to read as possible. */
+
+* {
+  font-family: comic, Arial, Helvetica, sans-serif;
+  color: #000000;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  word-spacing: 0.5em;
+  text-align: left;
+}
+
+body {
+  background-color: #dee6fc;
+  max-width: 95vw;
+  padding: 1.6em;
+}
+
+section.image-container-in-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+img#back-image {
+  width: 95vw;
+  height: auto;
+}
+
+menu {
+  font-size: 155%;
+  font-weight: bolder;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+}
+a:visited {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+main {
+  font-size: 120%;
+}
+
+h1 {
+  font-size: 5vw;
+  text-align: center;
+}
+
+footer > h3 {
+  font-size: 2.5vw;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #dee6fc;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #dee6fc;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #dee6fc;
+}
+
+input[type="submit"] {
+  font-size: large;
+  width: auto;
+  height: 7vh;
+}
+
+#forest-image {
+  width: auto;
+  height: 25vh;
+}
+
+div,
+paragraph-separator {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#beach-image {
+  width: auto;
+  height: 25vh;
+}
+
+section.image-container-in-information {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-container-in-information,
+p {
+  padding-left: 0.5em;
+}
+
+img#cup-of-coffee {
+  width: 50vw;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img,
+project-description {
+  width: 50vw;
+  height: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+project-description > h3 {
+  font-size: 2.5vw;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+li > span {
+  line-height: 2.5em;
+}
+
+table,
+th,
+td {
+  border: 2px solid;
+  border-collapse: collapse;
+}
+
+table {
+  width: 90vw;
+}
+
+th {
+  height: 7vw;
+}
+
+td {
+  height: 7vh;
+  vertical-align: bottom;
+  padding-left: 0.5em;
+  padding-right: 0.9em;
+}
+
+/* @media queries */
+
+@media only screen and (max-width: 500px) {
+  main > p {
+    font-size: 90%;
+  }
+
+  #name-and-title {
+    text-align: center;
+  }
+  #name-and-title h3 {
+    text-align: center;
+  }
+
+  menu {
+    font-size: 110%;
+    margin-left: -1.9rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.image-container-in-information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  div,
+  paragraph-separator {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  footer > h3 {
+    font-size: 5vw;
+  }
+}

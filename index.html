@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon" href="assets/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>User Profile Anabela Santos</title>
+  </head>
+<body>
+  <header>
+   <section class="image-container-in-header">
+        <img id="back-image" alt="Farm building between vegetation in a Summer sunny day and a Lusitano foal in a traditional Alto Alentejo stable yard" src="assets/image_header.png"/>
+        <sub-section id="name-and-title">    
+          <h1>My Name</h1>
+          <h3>Junior Full Stack Developer</h3> 
+        </sub-section>
+      </section>
+  
+    <nav class="navbar"">
+        <menu>
+            <li><a href="bio.html">&#128301 Bio</a></li>
+            <li><a href="experience.html">&#128188 Experience</a></li>
+            <li><a href="portfolio.html">&#128190 Portfolio</a></li>
+        </menu>
+    </nav>
+</header>
+    <main>
+      <section class="information">
+        <heading><h1>About</h1></heading>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus metus urna, sodales vel felis ut, consequat molestie tellus.</p>
+        <p>  Donec iaculis est eu lorem auctor dignissim. Pellentesque hendrerit orci ac ante tempus, a auctor justo cursus. Ut hendrerit felis in laoreet dapibus.
+        </p>
+        <p>Nam nec libero vel mauris accumsan egestas sit amet nec metus. Cras dignissim vestibulum mi at lobortis. Morbi tempor interdum diam dapibus tincidunt. 
+        </p>
+        <p>Aenean sollicitudin pulvinar nisl, et commodo ex. Integer eget maximus dolor. Morbi pretium eros ut lectus blandit pellentesque.
+        </p>
+        <p>Suspendisse ut quam venenatis leo volutpat sodales in ac eros.Phasellus sem enim, tempus sit amet massa eu, volutpat consequat justo. Integer facilisis sapien tellus, eget consectetur ipsum eleifend in.
+        </p>
+  
+        <p>Vestibulum a justo arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec luctus aliquet tellus, eu efficitur dolor iaculis quis.
+        </p>
+      <p>Etiam tincidunt sollicitudin erat, eu vehicula urna luctus non. Curabitur nisl elit, feugiat vel lobortis eu, semper eleifend pace.
+      </p>
+    
+        </section>
+  </main>
+  </body>
+  <footer>
+    <h3>Contact Me</h3>
+    <p>If you need further information, please contact me.</p>
+    <form action="Thank you for your message. I'll reply ASAP.php" method="post" id="user-form"> 
+        <!-- it will give an 405 (not allowed) error because there's no API set for this page. -->
+        Name: <input type="text" name="name">
+        Email: <input type="email" name="email">
+        Message: <br>
+        <textarea textarea rows="5" cols="50" name="message" form action="user-form">
+Please enter your message here...</textarea>
+<input type="submit" value="Submit" alt="click submit">
+    </form>
+  </footer>
+</html>
